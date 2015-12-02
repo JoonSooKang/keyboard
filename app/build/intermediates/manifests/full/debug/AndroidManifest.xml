@@ -6,7 +6,7 @@
         android:maxSdkVersion="17"
         android:minSdkVersion="11" />
 
-    <application android:label="@string/ime_name" >
+    <application android:label="Custom Keyboard" >
         <service
             android:name="com.example.android.softkeyboard.SoftKeyboard"
             android:permission="android.permission.BIND_INPUT_METHOD" >
@@ -24,7 +24,7 @@
 
         <activity
             android:name="com.example.android.softkeyboard.ImePreferences"
-            android:label="@string/settings_name" >
+            android:label="Setting" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

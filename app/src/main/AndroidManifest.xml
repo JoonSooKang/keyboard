@@ -3,7 +3,7 @@
     <uses-sdk
         android:maxSdkVersion="17"
         android:minSdkVersion="11" />
-    <application android:label="@string/ime_name">
+    <application android:label="Custom Keyboard">
         <service android:name="SoftKeyboard"
                 android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
@@ -15,7 +15,7 @@
         <service android:name=".ShakeActivity"
             android:enabled="true"></service>
 
-        <activity android:name=".ImePreferences" android:label="@string/settings_name">
+        <activity android:name=".ImePreferences" android:label="Setting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
