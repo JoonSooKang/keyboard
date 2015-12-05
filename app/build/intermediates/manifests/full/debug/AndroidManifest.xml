@@ -25,6 +25,8 @@
         <service
             android:name="com.example.android.softkeyboard.ShakeActivity"
             android:enabled="true" />
+        <service android:name="com.example.android.softkeyboard.setText" >
+        </service>
 
         <activity
             android:name="com.example.android.softkeyboard.ImePreferences"
@@ -33,6 +35,8 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+
+        <receiver android:name="com.example.android.softkeyboard.MyReceiver" />
     </application>
 
 </manifest>
