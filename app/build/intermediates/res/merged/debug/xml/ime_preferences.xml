@@ -17,32 +17,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
      <EditTextPreference
-         android:key="up"
+         android:key="upDown"
          android:maxLines="1"
          android:selectAllOnFocus="true"
          android:singleLine="true"
-         android:title="위 쪽" />
+         android:title="상하 진동" />
 
     <EditTextPreference
-        android:key="down"
+        android:key="leftRight"
         android:maxLines="1"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:title="아래쪽" />
-
-    <EditTextPreference
-        android:key="left"
-        android:maxLines="1"
-        android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:title="왼 쪽" />
-
-    <EditTextPreference
-        android:key="right"
-        android:maxLines="1"
-        android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:title="오른쪽" />
+        android:title="좌우 진동" />
 
 </PreferenceScreen>
 <!-- From: file:/C:/Users/JoonSooKang/AndroidStudioProjects/SoftKeyboard/app/src/main/res/xml/ime_preferences.xml -->
