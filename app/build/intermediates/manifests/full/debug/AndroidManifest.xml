@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.softkeyboard" >
+
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="11" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:label="Custom Keyboard" >
+        <service
+            android:name="com.example.android.softkeyboard.SoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+        <service
+            android:name="com.example.android.softkeyboard.ShakeActivity"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.example.android.softkeyboard.ImePreferences"
+            android:label="Setting" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
